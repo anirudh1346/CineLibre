@@ -1,0 +1,121 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.movie-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+
+.poster {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+
+.movie-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.movie-details h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+}
+
+
+.movie-details p {
+    margin: 0.3rem 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+
+.movie-details p strong {
+    color: #ffffff;
+}
+
+
+.movie-details .overview {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #dddddd;
+}
+
+.watch-button-container {
+    margin-top: 1rem;
+}
+
+.watch-button {
+    display: inline-block;
+    background: #1C1C1C;
+    color: #ffffff;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    text-decoration: none;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+
+.watch-button:hover {
+    background: #FF0000;
+}
+
+
+@media screen and (max-width: 768px) {
+    .watch-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .watch-box {
+        margin: 1.5rem auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .movie-details {
+        text-align: center;
+    }
+
+    .watch-button {
+        width: 100%;
+        text-align: center;
+    }
+}
